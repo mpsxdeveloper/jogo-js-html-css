@@ -1,0 +1,59 @@
+.quadrado {
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 45px;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    line-height: 45px;		
+}
+.quadrado-correto {
+    background-color: #FFFF00;
+}
+.alfabeto-letras {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 50px;
+}
+#snackbar.show {
+    visibility: visible;    
+    animation: fadein 0.5s, fadeout 0.5s 2s;
+}
+#tempo, #placar {
+    font-size: 20px; 
+    margin-left: 50px; 
+    padding: 5px; 
+    border: 1px solid #000; 
+    background-color: #00FF7F; 
+    font-weight: bold;
+}
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 50px; opacity: 1;}
+}
+@keyframes fadeout {
+    from {bottom: 50px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
