@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Index</title>
+</head>
+
+<body>
+    
+    <hr />
+    <div id="hud">
+        <p>Tente descobrir o nome de até 3 países, antes que o tempo acabe. A quantidade de acertos será multiplicada pelo valor do tempo
+            restante, e o resultado será adicionado ao seu placar. A cada rodada concluída com sucesso, até três novas palavras serão 
+            apresentadas e o tempo reiniciará a contagem.
+        </p>
+        <button id="start" class="button-md">Iniciar jogo</button>
+        <button onclick="window.location.href='index.html';">Recarregar página</button>
+        <span id="tempo">TEMPO: 60</span>
+        <span id="placar">PLACAR: 0</span>
+        <hr />
+    </div>
+    
+    <div id="game"></div>
+
+    <div id="alfabeto" style="display: none;">
+        <label>Escolha uma letra:</label><br /><br />
+        <div class="alfabeto-letras" data-marcado="">A</div>
+        <div class="alfabeto-letras" data-marcado="">B</div>
+        <div class="alfabeto-letras" data-marcado="">C</div>
+        <div class="alfabeto-letras" data-marcado="">D</div>
+        <div class="alfabeto-letras" data-marcado="">E</div>
+        <div class="alfabeto-letras" data-marcado="">F</div>
+        <div class="alfabeto-letras" data-marcado="">G</div>
+        <div class="alfabeto-letras" data-marcado="">H</div>
+        <div class="alfabeto-letras" data-marcado="">I</div>
+        <div class="alfabeto-letras" data-marcado="">J</div>
+        <div class="alfabeto-letras" data-marcado="">K</div>
+        <div class="alfabeto-letras" data-marcado="">L</div>
+        <div class="alfabeto-letras" data-marcado="">M</div>
+        <div class="alfabeto-letras" data-marcado="">N</div>
+        <div class="alfabeto-letras" data-marcado="">O</div>
+        <div class="alfabeto-letras" data-marcado="">P</div>
+        <div class="alfabeto-letras" data-marcado="">Q</div>
+        <div class="alfabeto-letras" data-marcado="">R</div>
+        <div class="alfabeto-letras" data-marcado="">S</div>
+        <div class="alfabeto-letras" data-marcado="">T</div>
+        <div class="alfabeto-letras" data-marcado="">U</div>
+        <div class="alfabeto-letras" data-marcado="">V</div>
+        <div class="alfabeto-letras" data-marcado="">W</div>
+        <div class="alfabeto-letras" data-marcado="">X</div>
+        <div class="alfabeto-letras" data-marcado="">Y</div>
+        <div class="alfabeto-letras" data-marcado="">Z</div>
+    </div>
+
+    <div id="snackbar"></div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
